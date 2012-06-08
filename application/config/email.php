@@ -28,14 +28,14 @@
   *  
   */                       
 $config['useragent']        = 'CodeIgniter';        
-$config['protocol']         = 'SMTP';        
+$config['protocol']         = 'smtp';        
 $config['mailpath']         = '/usr/sbin/sendmail';
 $config['smtp_host']        = 'smtp.sendgrid.net';
 $config['smtp_user']        = 'jamieshiers';
-$config['smtp_pass']        = 'cf664bz';
+$config['smtp_pass']        = '';
 $config['from_email'] 		= 'bookingbot@classroombooking.com';
-$config['from_name']		= 'Jamie Shiers';
-$config['from_domain']		= '@jamieshiers.co.uk';
+$config['from_name']		= 'Booking Bot';
+$config['from_domain']		= '@classroombooking.com';
 $config['smtp_port']        = 25;
 $config['smtp_timeout']     = 5;
 $config['wordwrap']         = TRUE;

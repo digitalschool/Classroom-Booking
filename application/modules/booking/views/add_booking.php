@@ -10,6 +10,10 @@
 */
 ?>
 
+
+<div style="padding:10px;">
+
+
 <style>
 	.roomadmin p{
 		background: #FAE5E3 20px 50% no-repeat;
@@ -23,11 +27,12 @@
 </style>
 	<div style="padding:20px;width:280px;">
 
+
 	<?php echo form_open('booking/booking/add/'.$room.'/'.$date.'/'.$period.'/'.$week)?>
 	
 	<?php
 	
-	if($room_info->admin !== "")
+	if($room_info->admin !== NULL)
 	{
 		echo "<div class='roomadmin'>";
 		echo "<p>Your booking will be approved by ".$room_info->admin."</p>";
@@ -80,4 +85,6 @@
 	echo form_submit($data);
 	echo form_close();
 	?>
+</div>
+
 </div>
